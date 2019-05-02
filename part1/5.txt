@@ -1,0 +1,19 @@
+arto@tiikeri:~$ docker run -d --name hakija2 -it ubuntu:16.04 sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'  
+f08b35ea936ddc34923ac3572af6c67e008ed454534e25765a22cda9b1d32e3e
+ ...
+arto@tiikeri:~$ docker exec hakija2 sh -c 'apt-get update && apt-get -y install curl'    
+Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+148 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+
+arto@tiikeri:~$ docker attach hakija2
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>

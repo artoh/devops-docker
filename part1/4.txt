@@ -1,0 +1,10 @@
+arto@tiikeri:~$ docker run -d --name clock devopsdockeruh/exec_bash_exercise
+95f4db4281485fb14d0c2ce487695e2e21aae22f7f8046c4fd7e3e003a81a781
+arto@tiikeri:~$ docker exec clock tail -f ./logs.txt
+"Docker is easy"
+Thu, 02 May 2019 04:22:27 GMT
+Thu, 02 May 2019 04:22:30 GMT
+Thu, 02 May 2019 04:22:33 GMT
+Thu, 02 May 2019 04:22:36 GMT
+Secret message is:
+"Docker is easy"

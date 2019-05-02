@@ -1,0 +1,6 @@
+arto@tiikeri:~$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+7aee888e662f        owncloud            "docker-entrypoint.s…"   50 seconds ago      Exited (0) 12 seconds ago                       happy_jepsen
+607f70d0b120        postgres            "docker-entrypoint.s…"   2 minutes ago       Exited (0) 6 seconds ago                        sleepy_hertz
+d1dc6640297f        nginx               "nginx -g 'daemon of…"   3 minutes ago       Up 3 minutes                80/tcp              modest_taussig
+

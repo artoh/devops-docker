@@ -1,0 +1,3 @@
+arto@tiikeri:~/Opiskelu/devops-docker/part1/7$ docker build -t curler .  
+arto@tiikeri:~/Opiskelu/devops-docker/part1/7$ docker run -ti curler
+

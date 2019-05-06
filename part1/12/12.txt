@@ -1,0 +1,5 @@
+arto@tiikeri:/tmp/frontend-example-docker$ docker build -t frontend .
+arto@tiikeri:/tmp/backend-example-docker$ docker build -t backend .
+ 
+docker run -d -p 5000:5000 frontend
+docker run -d -p 8000:8000 -v /tmp/logs.txt:/usr/src/app/logs.txt backend

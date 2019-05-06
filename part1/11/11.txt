@@ -1,0 +1,6 @@
+touch /tmp/logs.txt
+docker run -d -p 8000:8000 -v /tmp/logs.txt:/usr/src/app/logs.txt backend
+docker stop 36cc
+docker start 36cc
+
+

@@ -1,0 +1,11 @@
+https://dockerhy16.herokuapp.com/
+
+docker pull devopsdockeruh/heroku-example
+heroku login
+heroku container:login
+docker tag devopsdockeruh/heroku-example registry.heroku.com/dockerhy16/web
+docker push registry.heroku.com/dockerhy16/web
+heroku container:release -a dockerhy16  web
+
+
+

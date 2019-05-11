@@ -1,0 +1,36 @@
+# Nothing needs to change since 2.9
+# frontend's API_URL environment is everything needed to
+# add support to proxy
+
+version: '3'
+
+services:
+    redis:
+        image: redis
+    database:
+        image: postgres
+        environment:
+            - POSTGRES_PASSWORD=KaikkiOnHeikunKeikun
+            - POSTGRES_USER=kontti
+        volumes:
+            - /tmp/data:/var/lib/postgresql/data
+    backend:
+        image: backend
+        environment:
+            - REDIS=redis
+            - REDIS_PORT=6379
+            - DB_USERNAME=kontti
+            - DB_PASSWORD=KaikkiOnHeikunKeikun
+            - DB_HOST=database          
+        restart: unless-stopped      
+    frontend:
+        image: frontend
+        environment:
+            - API_URL=/api/
+    nginx:
+        image: nginx
+        volumes:
+            - ./nginx.conf:/etc/nginx/nginx.conf
+        ports:
+            - 80:80
+

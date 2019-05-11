@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    first_volume_excercise:
+        image: devopsdockeruh/first_volume_exercise
+        volumes:
+            - /tmp/mylog.txt:/usr/app/logs.txt
+            
+# Requires mylog.txt to be a file

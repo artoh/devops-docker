@@ -1,0 +1,12 @@
+Frontend
+
+Before (optimized Ubuntu:16.04 based) 420 MB
+Testing first Node:10 based, 1.0GB
+Finally Node::Alphine based, 233 MB
+
+
+Backend
+
+Before (optimized Ubuntu:16.04 based) 372 MB
+Testing Node:10 based, 1.0 GB
+Finally Node::Alphine based 185 MB

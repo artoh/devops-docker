@@ -1,0 +1,3 @@
+Before optimization 734 MB
+
+After optimization 464 MB

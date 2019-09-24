@@ -1,0 +1,12 @@
+Frontend
+
+Size before optimization 448 MB
+Size after optimization 420 MB
+
+
+Backend
+My old dockerfile was made from node:10 and it was 932 MB !!!
+Size after optimization (from ubuntu:16.04) 323 MB
+
+
+
